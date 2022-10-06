@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="../assets/images/logo.svg" rel="icon" />
+  <title>BLDDB Documentation</title>
+  <meta name="description" content="Your ThemeForest item Name and description">
+  <meta name="author" content="Zixing Wang">
+
+  <!-- Stylesheet
+============================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/font-awesome/css/all.min.css" />
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/magnific-popup/magnific-popup.min.css" />
+  <!-- Highlight Syntax -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/highlight.js/styles/github.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/stylesheet.css" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7X9DPS593M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-7X9DPS593M');
+</script>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper   
+=============================== -->
+  <div id="main-wrapper">
+
+    <!-- Header
+  ============================ -->
+    <header id="header" class="sticky-top">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+        <div class="container-fluid">
+          <!-- Sidebar Toggler -->
+          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+
+          <!-- Logo -->
+          <a class="logo ml-md-3" href="https://blddb.net" title="iDocs Template"> <img src="../assets/images/brand.png"
+              alt="iDocs Template" style="height:40px" /> </a>
+          <!-- <span class="text-2 ml-2">v1.0</span> -->
+          <!-- Logo End -->
+
+          <ul class="social-icons social-icons-sm ml-lg-1 mr-1">
+            <li class="social-icons-dribbble"><a data-toggle="tooltip" href="https://github.com/nbwzx/blddb-docs"
+                target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Content
+  ============================ -->
+    <div id="content" role="main">
+
+      <!-- Sidebar Navigation
+	============================ -->
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#idocs_start">Getting Started</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_overview">Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_prerequisites">Prerequisites</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_styles">Styles</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_nightmare_style">Nightmare Style</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_balance_style">Balance Style</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_yuanzi_style">Yuanzi Style</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_style_comparisons">Comparisons</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_modules">Modules</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_3_style_corner">3-Style Corner</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_3_style_edge">3-Style Edge</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_corner_twist">Corner Twist</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_edge_flip">Edge Flip</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_3bld_parity">3BLD Parity</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_nightmare_alg_set">Nightmare Alg set</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_lettering_scheme">Lettering Scheme</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_github">GitHub</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_issue">Issue</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_contribution">Contribution</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_star">Star</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_license">License</a></li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_donate">Donate</a></li>
+        </ul>
+      </div>
+
+      <!-- Docs Content
+	============================ -->
+      <div class="idocs-content">
+        <div class="container">
+
+          <!-- Getting Started
+		============================ -->
+          <section id="idocs_start">
+            <h1>BLDDB Documentation</h1>
+            <p class="lead">Help for wherever you are on your blddb journey.</p>
+            <hr>
+            <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong>Website:</strong> <a href="https://blddb.net" target="_blank">blddb.net</a></li>
+                  <li><strong>Author:</strong> <a href="https://zixingwang.cn" target="_blank">Zixing Wang</a></li>
+                  <li><strong>Translator:</strong> Chenhao Sun</li>
+                  <li><strong>Translation reviewer:</strong> Abhijeet Ghodgaonkar</li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong>GitHub (blddb):</strong> <a href="https://github.com/nbwzx/blddb"
+                      target="_blank">github.com/nbwzx/blddb</a></li>
+                  <li><strong>GitHub (docs):</strong> <a href="https://github.com/nbwzx/blddb-docs"
+                      target="_blank">github.com/nbwzx/blddb-docs</a></li>
+                  <li><strong>Created:</strong> June 12<sup>th</sup>, 2022</li>
+                  <li><strong>Update:</strong> October 6<sup>th</sup>, 2022</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Overview
+		============================ -->
+          <section id="idocs_overview">
+            <h3>Overview</h3>
+            <p>
+              　　<strong>BLDDB</strong> (<a class="ml-1" target="_blank" href="https://blddb.net"><i
+                  class="fas fa-external-link-alt"></i> blddb.net</a>) is a 3BLD algorithms database and includes
+              thousands of algorithms.
+            </p>
+            <p>
+              　　It supports simplified Chinese and English, and is compatible
+              with mobile phones, PCs and tablets. The website provides many options for each case, so the users can
+              select algorithm based on their own preference.
+            </p>
+            <p><a class="popup-img" href="../assets/images/en/blddb.net_.png"><img
+                  src="../assets/images/en/blddb.net_.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Prerequisites
+		============================ -->
+          <section id="idocs_prerequisites">
+            <h3>Prerequisites</h3>
+            <p>　　We recommends that you have a basic understanding of blindfolded solving first.</p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Styles
+		============================ -->
+          <section id="idocs_styles">
+            <h2>Styles</h2>
+            <p>
+              　　<strong>BLDDB</strong> includes three styles:
+            </p>
+            <ul>
+              <li>Nightmare Style</li>
+              <li>Balance Style</li>
+              <li>Yuanzi Style</li>
+            </ul>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Nightmare Style
+		============================ -->
+          <section id="idocs_nightmare_style">
+            <h3>Nightmare Style</h3>
+            <p>
+              　　<strong>Yifan Wang</strong> (2017WANY29) proposed the nightmare style in early 2020. In the nightmare
+              style, there are no L layer moves. Left hand is always in home grip position and most of the operations
+              are done by right hand. In this style, an algorithm with alternate D and D' and without D2 moves is
+              preferred. The average move count may be longer than the traditional 3-style algorithms. However, the time
+              in swapping between lefty-grip to righty-grip is reduced,
+              which leads to great potential of speeding up your solve.</p>
+
+            <p class="alert alert-info">If you need more information, please visit the following site: <a
+                target="_blank" href="https://space.bilibili.com/432235186">https://space.bilibili.com/432235186</a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Nightmare Style
+		============================ -->
+          <section id="idocs_balance_style">
+            <h3>Balance Style</h3>
+            <p>
+              　　The balanced style is based on the position-classified UFR corner alg tutorial launched by the
+              <strong>Yu Zou</strong> (coffee) and <strong>Zhi Qiao</strong> (spoon) in 2022. This style is a
+              RUD system, without overall rotation and double-layer rotation. Left hand is always in home grip position
+              and most of the operations are done by right hand. Compared with the nightmare style, the balanced style
+              pays more attention to the ease of learning of the algorithms. There are more traditional
+              algorithms, and the average move count are shorter, and at the same time, the limitations for D2 and
+              alternating D and D' are reduced. Balanced style is named because this style tries to balance between the
+              emerging nightmare style and the traditional one.
+            </p>
+
+            <p class="alert alert-info">
+              　　If you need more information, please visit the following site: <a target="_blank"
+                href="https://www.bilibili.com/read/cv17499305">https://www.bilibili.com/read/cv17499305</a>
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Yuanzi Style
+		============================ -->
+          <section id="idocs_yuanzi_style">
+            <h3>Yuanzi Style</h3>
+            <p>
+              　　Yuanzi style is based on <strong>Mengfei Shen</strong>'s alg set. And this style mainly uses traditional
+              algorithms.
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Comparisons
+		============================ -->
+          <section id="idocs_style_comparisons">
+            <style>
+              th {
+                background-color: lightblue;
+              }
+
+              /* th,
+              td {
+                text-align: center;
+                position: static;
+                background-clip: padding-box;
+              }
+
+              th:first-child,
+              td:first-child {
+                text-align: left;
+              } */
+
+              tr:nth-child(even) {
+                background-color: #f2f2f2
+              }
+
+              .fa-check {
+                color: green;
+              }
+
+              .fa-remove {
+                color: red;
+              }
+            </style>
+            <h3>Comparisons</h3>
+            <p>
+              　　Please refer to the table below for the main differences among these
+              styles.
+            </p>
+            <table style="width:min(90%, 700px)" class="table table-bordered">
+              <thead>
+                <th>Features</th>
+                <th>nightmare</th>
+                <th>balance</th>
+                <th>yuanzi</th>
+              </thead>
+              <tr>
+                <td>R, U, D, F, B Layer Turns</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>L Layer Turns</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>Double Layer Turns</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>Rotations</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>D2 Moves</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>Not alternate D and D'</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+            </table>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Components
+		============================ -->
+          <section id="idocs_modules">
+            <h2>Modules</h2>
+            <p>
+              　　<strong>BLDDB</strong> includes the
+              following eight modules.
+            </p>
+            <ul>
+              <li>3-Style Corner</li>
+              <li>3-Style Edge</li>
+              <li>Corner Twist</li>
+              <li>Edge Flip</li>
+              <li>3BLD Parity</li>
+              <li>Nightmare Alg Set</li>
+              <li>Lettering Scheme</li>
+              <li>Readme</li>
+            </ul>
+          </section>
+
+          <hr class="divider">
+
+          <!-- 3-Style Corner
+		============================ -->
+          <section id="idocs_3_style_corner">
+            <h3>3-Style Corner</h3>
+            <p>
+              　　All the algorithms provided go inline with the nightmare style and are generated by the program. We rank
+              the algorithms by defining "equivalent moves". There are many different parameters in calculating
+              equivalent moves. We mainly use the nightmare algorithm set as training data, and adjust the weight
+              parameters through the <a href="https://en.wikipedia.org/wiki/Simulated_annealing"
+                target="blank">simulated annealing
+                algorithm</a>, so that the algorithm used in the latest nightmare algorithm set is ranked as high as
+              possible among all the alternative algorithms. 18 algorithms with the highest ranking are displayed on the
+              website and the one in gray is the main algorithm in the latest nightmare algorithm set.
+            </p>
+            <p>
+              　　Enter the letter pair (buffer included) or the position to query. There will be at most 18 algorithms
+              provided. It also provides a commutator form and recommendation position of gripping the cube.
+            </p>
+            <p><a class="popup-img" href="../assets/images/en/blddb.net_corner.html.png"><img
+                  src="../assets/images/en/blddb.net_corner.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+            <p>
+              　　What's more, you can also switch the styles among nightmare style, balance style and yuanzi style.
+            </p>
+            <p><a class="popup-img" href="../assets/images/en/blddb.net_corner.html (1).png"><img
+                  src="../assets/images/en/blddb.net_corner.html (1).png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- 3-Style Edge
+		============================ -->
+          <section id="idocs_3_style_edge">
+            <h3>3-Style Edge</h3>
+            <p>
+              　　Most of the algorithms are traditional ones (including some symmetrical cases or swapping U, U' moves
+              simply). It is temporarily impossible to brute-force all the positive solutions under the similar
+              restrictions. Thus, the ranking is based on the number of moves (STM). At most 18 algorithms with the
+              highest ranking are displayed on the website and the one in gray is the main algorithm in the latest
+              nightmare algorithm set.
+            </p>
+            <p><a class="popup-img" href="../assets/images/en/blddb.net_edge.html.png"><img
+                  src="../assets/images/en/blddb.net_edge.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+            <p>
+              　　For each specific 3-edge-cycle, users can enter the starting move sequence to
+              filter the algorithm.
+            </p>
+            <p><a class="popup-img" href="../assets/images/en/blddb.net_edge.html (1).png"><img
+                  src="../assets/images/en/blddb.net_edge.html (1).png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Corner Twist
+		============================ -->
+          <section id="idocs_corner_twist">
+            <h3>Corner Twist</h3>
+            <p>
+              　　Corner Twist uses the similar rules as the nightmare style of 3-Style Corner.
+            </p>
+            <p><a class="popup-img" href="../assets/images/en/blddb.net_2twists.html.png"><img
+                  src="../assets/images/en/blddb.net_2twists.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Edge Flip
+		============================ -->
+          <section id="idocs_edge_flip">
+            <h3>Edge Flip</h3>
+            <p>
+              　　Edge Flip uses the similar rules as the nightmare style of 3-Style Edge.
+            </p>
+            <p><a class="popup-img" href="../assets/images/en/blddb.net_2flips.html.png"><img
+                  src="../assets/images/en/blddb.net_2flips.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- 3BLD Parity
+		============================ -->
+          <section id="idocs_3bld_parity">
+            <h3>3BLD Parity</h3>
+            <p>
+              　　3BLD Parity uses the similar rules as the nightmare style of 3-Style Corner.
+            </p>
+            <p><a class="popup-img" href="../assets/images/en/blddb.net_parity.html.png"><img
+                  src="../assets/images/en/blddb.net_parity.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Nightmare Alg Set
+		============================ -->
+          <section id="idocs_nightmare_alg_set">
+            <h3>Nightmare Alg Set</h3>
+            <p>
+              　　Nightmare Alg Set is an algorithms set based on nightmare style. It includes twelve submodules:
+            </p>
+            <ul>
+              <li>3-Style Corner</li>
+              <li>3-Style Edge</li>
+              <li>Corner Twist</li>
+              <li>Edge Flip</li>
+              <li>Parity</li>
+              <li>Parity with a Flip/Twist</li>
+              <li>2e2e</li>
+              <li>2c2c</li>
+              <li>3 Corner Twist</li>
+              <li>4 Edge Flip</li>
+              <li>5-Style Edge (UR)</li>
+              <li>Readme</li>
+            </ul>
+            <p><a class="popup-img" href="../assets/images/en/blddb.net_nightmare_.png"><img
+                  src="../assets/images/en/blddb.net_nightmare_.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Lettering Scheme
+		============================ -->
+          <section id="idocs_lettering_scheme">
+            <h3>Lettering Scheme</h3>
+            <p>
+              　　The Chinese lettering scheme and yellow(top)-red(front) is set as default. Speffz lettering scheme is
+              also added. For users with a different coding system, they can modify the letter in the cube manually.
+              Users can also change the orientation into their preferred one.
+            </p>
+            <p><a class="popup-img" href="../assets/images/en/blddb.net_code.html.png"><img
+                  src="../assets/images/en/blddb.net_code.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- FAQ
+          ============================ -->
+          <section id="idocs_faq">
+            <h2>FAQ</h2>
+            <p class="text-4">Here is some frequently asked questions.
+            </p>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="accordion accordion-alterate arrow-right" id="popularTopics">
+                  <div class="card">
+                    <div class="card-header" id="heading1">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1"
+                          aria-expanded="false" aria-controls="collapse1">What does BLDDB mean?</a> </h5>
+                    </div>
+                    <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
+                      <div class="card-body">BLDDB is an abbreviation for 'Blindfolded Database'. </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
+                          aria-expanded="false" aria-controls="collapse2">Will more modules be added to BLDDB?</a> </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                      <div class="card-body"> Of course we will. Please look forward to. </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+
+          <hr class="divider">
+
+          <!-- GitHub
+		============================ -->
+          <section id="idocs_github">
+            <h2>GitHub</h2>
+          </section>
+
+          <!-- Issue
+		============================ -->
+          <section id="idocs_issue">
+            <h3>Issue</h3>
+            <p>
+              　　If this documentation doesn't answer your questions, please feel free to open an issue in
+              <a class="ml-1" target="_blank" href="https://github.com/nbwzx/blddb/issues/new"><i
+                  class="fas fa-external-link-alt"></i> blddb</a> or <a class="ml-1" target="_blank"
+                href="https://github.com/nbwzx/blddb-docs/issues/new"><i class="fas fa-external-link-alt"></i>
+                blddb-docs</a>.
+            </p>
+            <p>
+              　　We are located in GMT+8 time zone and answer all questions within one day on weekdays. In
+              some rare cases, the waiting time can be to two days.
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Contribution
+		============================ -->
+          <section id="idocs_contribution">
+            <h3>Contribution</h3>
+            <p>
+              　　Pull requests are welcome for any part of this project. Please feel free to send PRs directly for typos,
+              bug fixes, and any open issues in
+              <a class="ml-1" target="_blank" href="https://github.com/nbwzx/blddb/issues"><i
+                  class="fas fa-external-link-alt"></i> blddb</a> or <a class="ml-1" target="_blank"
+                href="https://github.com/nbwzx/blddb-docs/issues"><i class="fas fa-external-link-alt"></i>
+                blddb-docs</a>.
+            </p>
+            <p>
+              　　If you have any thoughts about bigger contributions, please consider filing an
+              issue in
+              <a class="ml-1" target="_blank" href="https://github.com/nbwzx/blddb/issues/new"><i
+                  class="fas fa-external-link-alt"></i> blddb</a> or <a class="ml-1" target="_blank"
+                href="https://github.com/nbwzx/blddb-docs/issues/new"><i class="fas fa-external-link-alt"></i>
+                blddb-docs</a> to discuss it before sending a pull request.
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Star
+		============================ -->
+          <section id="idocs_star">
+            <h3>Don't Forget to Star BLDDB</h3>
+            <div class="alert alert-success">
+              　　Please star <a class="ml-1" target="_blank" href="https://github.com/nbwzx/blddb"><i
+                  class="fas fa-external-link-alt"></i> blddb</a> and <a class="ml-1" target="_blank"
+                href="https://github.com/nbwzx/blddb-docs"><i class="fas fa-external-link-alt"></i>
+                blddb-docs</a> on GitHub if you like this project. It would be a great support for us.
+              <br />
+            </div>
+          </section>
+          <hr class="divider">
+
+          <!-- License
+		============================ -->
+          <section id="idocs_license">
+            <h2>License</h2>
+            <p>
+              　　<strong>BLDDB</strong> is licensed under the GPL license (version 3 or later). This means that it is
+              <strong>free
+                to use</strong>, although you <strong>must publish any code that uses it</strong> (e.g. also
+              put it on GitHub). See <a target="_blank" href="https://www.gnu.org/licenses">the full license</a> for
+              exact
+              details.
+            </p>
+            <p>
+              　　We've selected this license in order to encourage the cubing community to work on software in a way so
+              that everyone can contribute and extend each other's work.
+            </p>
+            <p>
+              　　Besides, <strong>BLDDB</strong> includes some open source components. Please refer to the table below for
+              these
+              open source components and licenses.
+            </p>
+            <p>
+              <table style="width:min(70%, 400px)" class="table table-bordered">
+                <thead>
+                  <th>Name</th>
+                  <th>License</th>
+                </thead>
+                <tr>
+                  <td><a href="https://html5up.net" target="_blank">HTML5 UP</a></td>
+                  <td><a href="https://html5up.net/license" target="_blank">CCA 3.0 License</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://harnishdesign.net/idocs-free-one-page-documentation-html-template.html"
+                      target="_blank">iDocs</a></td>
+                  <td><a href="https://github.com/harnishdesign/iDocs/blob/main/LICENSE" target="_blank">MIT License</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://zixingwang.cn/commutator" target="_blank">Commutator</a></td>
+                  <td><a href="https://github.com/nbwzx/commutator/blob/main/LICENSE" target="_blank">MIT License</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://fontawesome.com" target="_blank">Fontawesome</a></td>
+                  <td><a href="https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt" target="_blank">Font
+                      Awesome Free License</a></td>
+                </tr>
+              </table>
+            </p>
+            <p>
+              　　Many thanks go to the blinders who gave advice and suggestion on this website. I am especially grateful
+              to Yifan Wang (2017WANY29) who proposed and developed the nightmare system and nightmare algorithm set.
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Donate
+		============================ -->
+          <section id="idocs_donate">
+            <h2>Donate</h2>
+            <p>
+              　　Thank you for your willingness to support BLDDB! Your donation will be used to support our development
+              and maintenance costs.
+            </p>
+            <p>
+              　　If you would like to offer us a donation through PayPal, please click the button below or through <a
+                class="ml-1" target="_blank" href="https://www.paypal.com/paypalme/nbwzx"><i
+                  class="fas fa-external-link-alt"></i> PayPal</a>.
+            </p>
+            <p>
+              　　You can also fund us by Alipay or Wechat Pay, scan the next two-dimensional code:
+            </p>
+            <p><a class="popup-img" href="../assets/images/Alipay.png"><img src="../assets/images/Alipay.png"
+                  class="img-fluid img-thumbnail" alt="image" style="width:min(35%, 200px)"></a><a class="popup-img"
+                href="../assets/images/Wechatpay.png"><img src="../assets/images/Wechatpay.png"
+                  class="img-fluid img-thumbnail" alt="image" style="width:min(35%, 200px)"></a></p>
+            <p>
+              　　Thank you again for your donation!
+            </p>
+          </section>
+
+          <hr class="divider">
+
+        </div>
+      </div>
+
+    </div>
+    <!-- Content end -->
+
+    <!-- Footer
+  ============================ -->
+    <footer id="footer" class="section bg-light">
+      <div class="container">
+        <p class="text-center">Copyright &copy; 2022 <a href="https://zixingwang.cn" target="_blank">Zixing Wang</a>.
+          All Rights
+          Reserved.</p>
+        <p class="text-2 text-center mb-0">Powered by <a class="btn-link" target="_blank"
+            href="https://harnishdesign.net/idocs-free-one-page-documentation-html-template.html">iDocs</a>.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+  </div>
+  <!-- Document Wrapper end -->
+
+  <!-- Back To Top -->
+  <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+      class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript
+============================ -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Highlight JS -->
+  <script src="../assets/vendor/highlight.js/highlight.min.js"></script>
+  <!-- Easing -->
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="../assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Custom Script -->
+  <script src="../assets/js/theme.js"></script>
+</body>
+
+</html>

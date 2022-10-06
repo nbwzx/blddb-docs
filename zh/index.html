@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="../assets/images/logo.svg" rel="icon" />
+  <title>三盲公式库 文档</title>
+  <meta name="description" content="Your ThemeForest item Name and description">
+  <meta name="author" content="Zixing Wang">
+
+  <!-- Stylesheet
+============================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/font-awesome/css/all.min.css" />
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/magnific-popup/magnific-popup.min.css" />
+  <!-- Highlight Syntax -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/highlight.js/styles/github.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/stylesheet.css" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7X9DPS593M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-7X9DPS593M');
+</script>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper   
+=============================== -->
+  <div id="main-wrapper">
+
+    <!-- Header
+  ============================ -->
+    <header id="header" class="sticky-top">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+        <div class="container-fluid">
+          <!-- Sidebar Toggler -->
+          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+
+          <!-- Logo -->
+          <a class="logo ml-md-3" href="https://blddb.net" title="iDocs Template"> <img src="../assets/images/brand.png"
+              alt="iDocs Template" style="height:40px" /> </a>
+          <!-- <span class="text-2 ml-2">v1.0</span> -->
+          <!-- Logo End -->
+
+          <ul class="social-icons social-icons-sm ml-lg-1 mr-1">
+            <li class="social-icons-dribbble"><a data-toggle="tooltip" href="https://github.com/nbwzx/blddb-docs"
+                target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Content
+  ============================ -->
+    <div id="content" role="main">
+
+      <!-- Sidebar Navigation
+	============================ -->
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#idocs_start">开始</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_overview">简介</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_prerequisites">预备</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_styles">风格</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_nightmare_style">噩梦风格</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_balance_style">平衡风格</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_yuanzi_style">圆子风格</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_style_comparisons">比较</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_modules">模块</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_3_style_corner">角块公式库</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_3_style_edge">棱块公式库</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_corner_twist">翻角公式库</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_edge_flip">翻棱公式库</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_3bld_parity">奇偶公式库</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_image">联想词库</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_nightmare_alg_set">噩梦公式集</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_lettering_scheme">编码</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_faq">常见问题</a></li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_github">GitHub</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_issue">问题</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_contribution">贡献</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_star">点赞</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_license">许可证</a></li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_donate">捐赠</a></li>
+        </ul>
+      </div>
+
+      <!-- Docs Content
+	============================ -->
+      <div class="idocs-content">
+        <div class="container">
+
+          <!-- Getting Started
+		============================ -->
+          <section id="idocs_start">
+            <h1>三盲公式库说明</h1>
+            <p class="lead">在三盲公式库旅程中随时为你提供帮助。</p>
+            <hr>
+            <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong>网站:</strong> <a href="https://blddb.net" target="_blank">blddb.net</a></li>
+                  <li><strong>作者:</strong> <a href="https://zixingwang.cn" target="_blank">Zixing Wang</a></li>
+                  <li><strong>英文翻译:</strong> Chenhao Sun</li>
+                  <li><strong>英文翻译校对:</strong> Abhijeet Ghodgaonkar</li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong>GitHub (blddb):</strong> <a href="https://github.com/nbwzx/blddb"
+                      target="_blank">github.com/nbwzx/blddb</a></li>
+                  <li><strong>GitHub (docs):</strong> <a href="https://github.com/nbwzx/blddb-docs"
+                      target="_blank">github.com/nbwzx/blddb-docs</a></li>
+                  <li><strong>创建:</strong> 2022年6月12日</li>
+                  <li><strong>更新:</strong> 2022年10月6日</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Overview
+		============================ -->
+          <section id="idocs_overview">
+            <h3>简介</h3>
+            <p>
+              　　<strong>三盲公式库</strong> (<a class="ml-1" target="_blank" href="https://blddb.net"><i
+                  class="fas fa-external-link-alt"></i> blddb.net</a>) 是一个包含了数万条公式的三阶盲拧公式库。
+            </p>
+            <p>
+              　　它兼容手机、电脑、平板等多种类型的设备，支持简体中文和英语两种语言。三盲公式库提供了多个备选公式，你可以自由地选择公式，从而定制出一套适合自己手法的公式集。
+            </p>
+            <p><a class="popup-img" href="../assets/images/zh/blddb.net_.png"><img
+                  src="../assets/images/zh/blddb.net_.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Prerequisites
+		============================ -->
+          <section id="idocs_prerequisites">
+            <h3>预备</h3>
+            <p>　　我们推荐你在使用三盲公式库前具有对于盲拧的基本了解。</p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Styles
+		============================ -->
+          <section id="idocs_styles">
+            <h2>风格</h2>
+            <p>
+              　　<strong>三盲公式库</strong> 包含三种风格:
+            </p>
+            <ul>
+              <li>噩梦 (nightmare) 风格</li>
+              <li>平衡 (balance) 风格</li>
+              <li>圆子 (Yuanzi) 风格</li>
+            </ul>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Nightmare Style
+		============================ -->
+          <section id="idocs_nightmare_style">
+            <h3>噩梦风格</h3>
+            <p>
+              　　在2020年初，王逸帆提出了噩梦公式的概念。噩梦公式，是指全右手操作的公式，同时保持左手自始至终中立放置。这样的公式可能会适当增加原来公式的步数，但好处就是可以消除两条公式左右换手所浪费的时间，从而增强公式的爆发力，提升速度。
+
+              <p class="alert alert-info">如果你需要更多的信息，请访问下面的网站: <a target="_blank"
+                  href="https://space.bilibili.com/432235186">https://space.bilibili.com/432235186</a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Nightmare Style
+		============================ -->
+          <section id="idocs_balance_style">
+            <h3>平衡风格</h3>
+            <p>
+              　　平衡流角块公式是基于2022年魔友邹瑜（咖啡）与乔智（勺子）推出的位置分类的UFR角块公式教程为基础的公式风格。平衡流公式为全RUD体系，无整体转动和双层转动，均为右手操作，左手在每一条公式中手位不变。相比噩梦公式，平衡流较为注重公式的易学性，采用的传统公式较多，公式步骤较短，同时降低对D层交替和D2数量的要求。由于风格尝试平衡于新兴的噩梦风格和传统风格之间，因此命名平衡流。
+            </p>
+
+            <p class="alert alert-info">
+              　　如果你需要更多的信息，请访问下面的网站: <a target="_blank"
+                href="https://www.bilibili.com/read/cv17499305">https://www.bilibili.com/read/cv17499305</a>
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Yuanzi Style
+		============================ -->
+          <section id="idocs_yuanzi_style">
+            <h3>圆子风格</h3>
+            <p>
+              　　圆子风格基于沈梦非的公式集。这个风格主要使用传统公式。
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Comparisons
+		============================ -->
+          <section id="idocs_style_comparisons">
+            <style>
+              th {
+                background-color: lightblue;
+              }
+
+              /* th,
+              td {
+                text-align: center;
+                position: static;
+                background-clip: padding-box;
+              }
+
+              th:first-child,
+              td:first-child {
+                text-align: left;
+              } */
+
+              tr:nth-child(even) {
+                background-color: #f2f2f2
+              }
+
+              .fa-check {
+                color: green;
+              }
+
+              .fa-remove {
+                color: red;
+              }
+            </style>
+            <h3>比较</h3>
+            <p>
+              　　请参阅下表了解这些风格之间的主要差异。
+            </p>
+            <table style="width:min(90%, 700px)" class="table table-bordered">
+              <thead>
+                <th>特点</th>
+                <th>噩梦</th>
+                <th>平衡</th>
+                <th>圆子</th>
+              </thead>
+              <tr>
+                <td>R, U, D, F, B 层操作</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>L 层操作</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>双层操作</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>魔方整体旋转</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>D2 步骤</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>不交替的 D 和 D'</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+            </table>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Components
+		============================ -->
+          <section id="idocs_modules">
+            <h2>模块</h2>
+            <p>
+              　　<strong>三盲公式库</strong> 包含以下9个模块.
+            </p>
+            <ul>
+              <li>角块公式库</li>
+              <li>棱块公式库</li>
+              <li>翻角公式库</li>
+              <li>翻棱公式库</li>
+              <li>奇偶公式库</li>
+              <li>联想词库</li>
+              <li>噩梦公式集</li>
+              <li>编码</li>
+              <li>说明</li>
+            </ul>
+          </section>
+
+          <hr class="divider">
+
+          <!-- 3-Style Corner
+		============================ -->
+          <section id="idocs_3_style_corner">
+            <h3>角块公式库</h3>
+            <p>
+              　　角块公式库，翻角公式库和奇偶公式库的所有公式都是由程序生成的符合噩梦体系的公式。每条公式都有一个从多方面进行评价的量化指标“等效步数”。它们主要以噩梦版公式集为样本，通过<a
+                href="https://wikii.one/Simulated_annealing"
+                target="blank">模拟退火算法</a>对权重值进行调整，使得整体上噩梦版公式集采用的公式在所有备选公式中的排序中尽量靠前。排序前18条的公式会被显示在网页上，其中灰色的是最新的噩梦版公式集采用的公式。
+            </p>
+            <p>
+              　　查询方式：一般而言，只要在公式查询右边的横线上输入要查询的公式编码即可，上面的位置类会自动生成。你也可以通过选择位置类的方式来查询。输入完毕后，网页会显示该状态排序前18条的公式以及对应的交换子形式和起手位置。
+            </p>
+            <p><a class="popup-img" href="../assets/images/zh/blddb.net_corner.html.png"><img
+                  src="../assets/images/zh/blddb.net_corner.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+            <p>
+              　　此外，现在用户可以在 噩梦 (nightmare)、平衡 (balance)、 圆子 (yuanzi) 中选择喜欢的风格作为角块公式库的风格。请参阅下表了解它们之间的主要差异。
+            </p>
+            <p><a class="popup-img" href="../assets/images/zh/blddb.net_corner.html (1).png"><img
+                  src="../assets/images/zh/blddb.net_corner.html (1).png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- 3-Style Edge
+		============================ -->
+          <section id="idocs_3_style_edge">
+            <h3>棱块公式库</h3>
+            <p>
+              　　棱块公式库和翻棱公式库大多都是一些传统公式和传统公式的衍生公式（例如镜像，U 和 U'
+              互换等）。这是因为在类似的体系和限制下，棱块每种状态的公式数比角块多很多，暂时无法做到像角块一样暴力搜索出全部解法。其中。排序暂时仅通过转动步数进行升序排列，排序前18条的公式会被显示在网页上，其中灰色的是最新的噩梦版公式集采用的公式。
+            </p>
+            <p><a class="popup-img" href="../assets/images/zh/blddb.net_edge.html.png"><img
+                  src="../assets/images/zh/blddb.net_edge.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+            <p>
+              　　对于每个棱块三循环，用户可以输入 set up 来探索公式的新做法。
+            </p>
+            <p><a class="popup-img" href="../assets/images/zh/blddb.net_edge.html (1).png"><img
+                  src="../assets/images/zh/blddb.net_edge.html (1).png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Corner Twist
+		============================ -->
+          <section id="idocs_corner_twist">
+            <h3>翻角公式库</h3>
+            <p>
+              　　翻角公式库的原理和角块公式库类似。
+            </p>
+            <p><a class="popup-img" href="../assets/images/zh/blddb.net_2twists.html.png"><img
+                  src="../assets/images/zh/blddb.net_2twists.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Edge Flip
+		============================ -->
+          <section id="idocs_edge_flip">
+            <h3>翻棱公式库</h3>
+            <p>
+              　　翻棱公式库的原理和棱块公式库类似。
+            </p>
+            <p><a class="popup-img" href="../assets/images/zh/blddb.net_2flips.html.png"><img
+                  src="../assets/images/zh/blddb.net_2flips.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- 3BLD Parity
+		============================ -->
+          <section id="idocs_3bld_parity">
+            <h3>奇偶公式库</h3>
+            <p>
+              　　奇偶公式库的原理和角块公式库类似。
+            </p>
+            <p><a class="popup-img" href="../assets/images/zh/blddb.net_parity.html.png"><img
+                  src="../assets/images/zh/blddb.net_parity.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Image
+		============================ -->
+          <section id="idocs_image">
+            <h3>联想词库</h3>
+            <p>
+              　　联想词库为用户提供编码所对应的联想词表，使得词语的汉语拼音首字母为所查询的双字母。其中排序是按照词频降序排列，排在前100条的联想词会被显示在网页上，用户可以根据喜好选择适合自己的联想词。
+            </p>
+            <p><a class="popup-img" href="../assets/images/zh/blddb.net_image.html.png"><img
+                  src="../assets/images/zh/blddb.net_image.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Nightmare Alg Set
+		============================ -->
+          <section id="idocs_nightmare_alg_set">
+            <h3>噩梦公式集</h3>
+            <p>
+              　　噩梦公式集包含12个子模块：
+            </p>
+            <ul>
+              <li>全缓冲角</li>
+              <li>全缓冲棱</li>
+              <li>全两角翻</li>
+              <li>全两棱翻</li>
+              <li>奇偶</li>
+              <li>奇偶带翻</li>
+              <li>2e2e</li>
+              <li>2c2c</li>
+              <li>全三角翻</li>
+              <li>全四棱翻</li>
+              <li>五循环 (UR)</li>
+              <li>说明</li>
+            </ul>
+            <p><a class="popup-img" href="../assets/images/zh/blddb.net_nightmare_.png"><img
+                  src="../assets/images/zh/blddb.net_nightmare_.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Lettering Scheme
+		============================ -->
+          <section id="idocs_lettering_scheme">
+            <h3>编码</h3>
+            <p>
+              　　三盲公式库的默认编码是彳亍编码，已经预提供了彳亍编码和 Speffz
+              编码，可一键切换。其它编码体系的用户也可直接在编码网页上进行修改。用户还可以将盲拧坐标更改为自己的盲拧坐标。之后，便能使用自己的编码体系进行公式的查询了。
+            </p>
+            <p><a class="popup-img" href="../assets/images/zh/blddb.net_code.html.png"><img
+                  src="../assets/images/zh/blddb.net_code.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- FAQ
+          ============================ -->
+          <section id="idocs_faq">
+            <h2>常见问题</h2>
+            <p class="text-4">下面是一些常见问题
+            </p>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="accordion accordion-alterate arrow-right" id="popularTopics">
+                  <div class="card">
+                    <div class="card-header" id="heading1">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1"
+                          aria-expanded="false" aria-controls="collapse1">为什么叫作 BLDDB?</a> </h5>
+                    </div>
+                    <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
+                      <div class="card-body">BLDDB 是 'Blindfolded Database' 的缩写. </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
+                          aria-expanded="false" aria-controls="collapse2">以后三盲公式库会有更多的模块吗？</a> </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                      <div class="card-body"> 当然会的。敬请期待。</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+
+          <hr class="divider">
+
+          <!-- GitHub
+		============================ -->
+          <section id="idocs_github">
+            <h2>GitHub</h2>
+          </section>
+
+          <!-- Issue
+		============================ -->
+          <section id="idocs_issue">
+            <h3>问题</h3>
+            <p>
+              　　如果本文档没有回答您的问题，请随时在
+              <a class="ml-1" target="_blank" href="https://github.com/nbwzx/blddb/issues/new"><i
+                  class="fas fa-external-link-alt"></i> blddb</a> 或者 <a class="ml-1" target="_blank"
+                href="https://github.com/nbwzx/blddb-docs/issues/new"><i class="fas fa-external-link-alt"></i>
+                blddb-docs</a> 提出问题。
+            </p>
+            <p>
+              　　我们位于 GMT+8 时区，会在 1 个工作日内回答您的问题。在极少数情况下，等待时间会到达 2 个工作日。
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Contribution
+		============================ -->
+          <section id="idocs_contribution">
+            <h3>贡献</h3>
+            <p>
+              　　欢迎对该项目的任何部分提出拉取请求。如有错误，请直接发送拉取请求随时进行错误修复，以及
+              <a class="ml-1" target="_blank" href="https://github.com/nbwzx/blddb/issues"><i
+                  class="fas fa-external-link-alt"></i> blddb</a> 或者 <a class="ml-1" target="_blank"
+                href="https://github.com/nbwzx/blddb-docs/issues"><i class="fas fa-external-link-alt"></i>
+                blddb-docs</a> 的任何未解决的问题。
+            </p>
+            <p>
+              　　如果您对更大的贡献有任何想法，请考虑在发送拉取请求之前先在
+              <a class="ml-1" target="_blank" href="https://github.com/nbwzx/blddb/issues/new"><i
+                  class="fas fa-external-link-alt"></i> blddb</a> 或者 <a class="ml-1" target="_blank"
+                href="https://github.com/nbwzx/blddb-docs/issues/new"><i class="fas fa-external-link-alt"></i>
+                blddb-docs</a> 提交问题进行讨论。
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Star
+		============================ -->
+          <section id="idocs_star">
+            <h3>不要忘了点赞三盲公式库</h3>
+            <div class="alert alert-success">
+              　　如果你喜欢三盲公式库，请在 GitHub 点赞 <a class="ml-1" target="_blank" href="https://github.com/nbwzx/blddb"><i
+                  class="fas fa-external-link-alt"></i> blddb</a> 和 <a class="ml-1" target="_blank"
+                href="https://github.com/nbwzx/blddb-docs"><i class="fas fa-external-link-alt"></i>
+                blddb-docs</a>。这对我们有很重要的意义。
+              <br />
+            </div>
+          </section>
+          <hr class="divider">
+
+          <!-- License
+		============================ -->
+          <section id="idocs_license">
+            <h2>许可证</h2>
+            <p>
+              　　三盲公式库在 GPL 许可（版本 3 或更高版本）下发布。这意味着它是<strong>免费使用</strong>的，尽管您<strong>必须发布任何使用它的代码</strong>（例如放在 GitHub
+              上）。请参阅<a target="_blank" href="https://www.gnu.org/licenses">完整许可</a>了解细节。
+            </p>
+            <p>
+              　　我们选择此许可证是为了鼓励魔方社区的每个人都可以贡献和扩展彼此的工作。
+            </p>
+            <p>
+              　　三盲公式库也离不开一些开源项目。请参阅下表的开源项目和许可证。
+            </p>
+            <p>
+              <table style="width:min(70%, 400px)" class="table table-bordered">
+                <thead>
+                  <th>开源项目</th>
+                  <th>许可证</th>
+                </thead>
+                <tr>
+                  <td><a href="https://html5up.net" target="_blank">HTML5 UP</a></td>
+                  <td><a href="https://html5up.net/license" target="_blank">CCA 3.0 License</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://harnishdesign.net/idocs-free-one-page-documentation-html-template.html"
+                      target="_blank">iDocs</a></td>
+                  <td><a href="https://github.com/harnishdesign/iDocs/blob/main/LICENSE" target="_blank">MIT License</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://zixingwang.cn/commutator" target="_blank">Commutator</a></td>
+                  <td><a href="https://github.com/nbwzx/commutator/blob/main/LICENSE" target="_blank">MIT License</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://fontawesome.com" target="_blank">Fontawesome</a></td>
+                  <td><a href="https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt" target="_blank">Font
+                      Awesome Free License</a></td>
+                </tr>
+              </table>
+            </p>
+            <p>
+              　　此外，我要感谢国内外对三盲公式库提供想法与建议的盲拧爱好者们。特别要感谢王逸帆，噩梦公式的理念和噩梦版公式集是三盲公式库的重要基石。
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Donate
+		============================ -->
+          <section id="idocs_donate">
+            <h2>捐赠</h2>
+            <p>
+              　　感谢您愿意支持三盲公式库！您的捐赠将用于支持我们后续的开发和维护费用。
+            </p>
+            <p>
+              　　如果您希望通过 PayPal 为我们提供捐赠，请通过 <a class="ml-1" target="_blank"
+                href="https://www.paypal.com/paypalme/nbwzx"><i class="fas fa-external-link-alt"></i> PayPal</a>.
+            </p>
+            <p>
+              　　您也可以通过支付宝或微信支付的方式为我们提供资助，请扫描后面的二维码：
+            </p>
+            <p><a class="popup-img" href="../assets/images/Alipay.png"><img src="../assets/images/Alipay.png"
+                  class="img-fluid img-thumbnail" alt="image" style="width:min(35%, 200px)"></a><a class="popup-img"
+                href="../assets/images/Wechatpay.png"><img src="../assets/images/Wechatpay.png"
+                  class="img-fluid img-thumbnail" alt="image" style="width:min(35%, 200px)"></a></p>
+            <p>
+              　　再次感谢您的捐赠！
+            </p>
+          </section>
+
+          <hr class="divider">
+
+        </div>
+      </div>
+
+    </div>
+    <!-- Content end -->
+
+    <!-- Footer
+  ============================ -->
+    <footer id="footer" class="section bg-light">
+      <div class="container">
+        <p class="text-center">Copyright &copy; 2022 <a href="https://zixingwang.cn" target="_blank">Zixing Wang</a>.
+          All Rights
+          Reserved.</p>
+        <p class="text-2 text-center mb-0">Powered by <a class="btn-link" target="_blank"
+            href="https://harnishdesign.net/idocs-free-one-page-documentation-html-template.html">iDocs</a>.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+  </div>
+  <!-- Document Wrapper end -->
+
+  <!-- Back To Top -->
+  <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+      class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript
+============================ -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Highlight JS -->
+  <script src="../assets/vendor/highlight.js/highlight.min.js"></script>
+  <!-- Easing -->
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="../assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Custom Script -->
+  <script src="../assets/js/theme.js"></script>
+</body>
+
+</html>

@@ -77,6 +77,17 @@
     });
 
 
+    /*------------------------
+       Hide the navigation when clicks outside
+    -------------------------- */
+
+    $(document).on("click", () => {
+        if ($(".navbar-toggler").hasClass("show") && event.clientX >= 260) {
+            $(".navbar-toggler").click();
+        }
+    });
+
+
     // Mobile Menu
     $(".navbar-toggler").on("click", function() {
         $(this).toggleClass("show");

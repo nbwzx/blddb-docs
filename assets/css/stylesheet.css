@@ -5,7 +5,7 @@
    Template URL: http://demo.harnishdesign.net/html/idocs
    Author URL: https://themeforest.net/user/harnishdesign
    File Description : Main css file of the template
-	
+
 =================================================
   Table of Contents
 =================================================
@@ -295,7 +295,7 @@ dl, ol, ul, pre, blockquote, .table {
 
 .text-6 {
   font-size: 24px !important;
-  font-size: 1.50rem !important;
+  font-size: 1.5rem !important;
 }
 
 .text-7 {
@@ -315,7 +315,7 @@ dl, ol, ul, pre, blockquote, .table {
 
 .text-10 {
   font-size: 40px !important;
-  font-size: 2.50rem !important;
+  font-size: 2.5rem !important;
 }
 
 .text-11 {
@@ -751,7 +751,6 @@ hr {
   .idocs-navigation.active {
     margin-left: 0;
   }
-
   .idocs-content {
     margin-left: 0px;
     padding: 0px;
@@ -760,6 +759,14 @@ hr {
 /*=== 3.3 Section Divider ===*/
 .divider {
   margin: 2rem 0;
+}
+
+/*=== 3.4 Anchor ===*/
+a.anchor {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
 }
 
 /* =================================== */
@@ -910,7 +917,7 @@ hr {
 }
 .primary-menu ul.navbar-nav > li.dropdown:hover > a:after {
   clear: both;
-  content: ' ';
+  content: " ";
   display: block;
   width: 0;
   height: 0;
@@ -976,7 +983,7 @@ hr {
   margin-top: -40px;
 }
 .primary-menu ul.navbar-nav > li.dropdown .dropdown-menu .dropdown-toggle:after {
-  border-top: .4em solid transparent;
+  border-top: 0.4em solid transparent;
   border-right: 0;
   border-bottom: 0.4em solid transparent;
   border-left: 0.4em solid;
@@ -1056,7 +1063,7 @@ hr {
   color: rgba(250, 250, 250, 0.8);
 }
 .primary-menu.navbar-dropdown-dark ul.navbar-nav > li.dropdown .dropdown-menu li:hover > a:not(.btn) {
-  color: #fafafa;
+  color: rgb(250, 250, 250);
   font-weight: 600;
 }
 .primary-menu.navbar-dropdown-dark ul.navbar-nav > li.dropdown-mega .dropdown-mega-content > .row > div {
@@ -1076,7 +1083,7 @@ hr {
   color: rgba(250, 250, 250, 0.95);
 }
 .primary-menu.navbar-dropdown-primary ul.navbar-nav > li.dropdown .dropdown-menu li:hover > a:not(.btn) {
-  color: #fafafa;
+  color: rgb(250, 250, 250);
   font-weight: 600;
 }
 .primary-menu.navbar-dropdown-primary ul.navbar-nav > li.dropdown-mega .dropdown-mega-content > .row > div {
@@ -1739,7 +1746,7 @@ hr {
 .changelog .badge {
   width: 90px;
   margin-right: 10px;
-  border-radius: .20rem;
+  border-radius: 0.2rem;
   text-transform: uppercase;
 }
 .changelog li {
@@ -1816,7 +1823,7 @@ hr {
   margin: 0;
 }
 .accordion.accordion-alternate .card-header a {
-  padding-left: 1.40rem;
+  padding-left: 1.4rem;
   border-top: 1px solid #e4e9ec;
   border-radius: 0px;
 }
@@ -1963,7 +1970,7 @@ hr {
 .nav.nav-separator .nav-item + .nav-item .nav-link:after {
   height: 14px;
   width: 1px;
-  content: ' ';
+  content: " ";
   background-color: rgba(0, 0, 0, 0.2);
   display: block;
   position: absolute;
@@ -2000,7 +2007,7 @@ hr {
 .nav-tabs .nav-item .nav-link.active:after {
   height: 2px;
   width: 100%;
-  content: ' ';
+  content: " ";
   background-color: #0366d6;
   display: block;
   position: absolute;
@@ -2362,7 +2369,7 @@ hr {
   color: rgba(250, 250, 250, 0.8);
 }
 #footer.footer-text-light .nav .nav-item .nav-link:hover {
-  color: #fafafa;
+  color: rgb(250, 250, 250);
 }
 #footer.footer-text-light .footer-copyright {
   border-color: rgba(250, 250, 250, 0.15);
@@ -2372,7 +2379,7 @@ hr {
   color: rgba(250, 250, 250, 0.8);
 }
 #footer.footer-text-light:not(.bg-primary) .social-icons-light.social-icons li a:hover {
-  color: #fafafa;
+  color: rgb(250, 250, 250);
 }
 #footer.footer-text-light.bg-primary {
   color: #fff;
@@ -2496,7 +2503,7 @@ hr {
 }
 
 .form-control:not(.form-control-sm) {
-  padding: .810rem .96rem;
+  padding: 0.81rem 0.96rem;
   height: inherit;
 }
 
@@ -2523,14 +2530,14 @@ hr {
 
 select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
   height: auto;
-  padding-top: .700rem;
-  padding-bottom: .700rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .custom-select:not(.custom-select-sm) {
   height: calc(3.05rem + 2px);
-  padding-top: .700rem;
-  padding-bottom: .700rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .col-form-label-sm {
@@ -2543,7 +2550,7 @@ select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
 }
 
 .custom-select:not(.custom-select-sm).border-0 {
-  height: 3.00rem;
+  height: 3rem;
 }
 
 .form-control:focus, .custom-select:focus {
@@ -2619,7 +2626,7 @@ select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
   border-bottom: 2px solid rgba(0, 0, 0, 0.12);
   border-radius: 0px;
   padding-left: 0px !important;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .form-border .form-control::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.4);
@@ -2665,7 +2672,7 @@ select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
 
 .form-border-light .form-control {
   border-bottom: 2px solid rgba(250, 250, 250, 0.3);
-  color: #fafafa;
+  color: rgb(250, 250, 250);
 }
 .form-border-light .form-control::-webkit-input-placeholder {
   color: rgba(250, 250, 250, 0.7);
@@ -2684,7 +2691,7 @@ select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
 }
 .form-border-light .custom-select {
   border-bottom: 2px solid rgba(250, 250, 250, 0.3);
-  color: #fafafa;
+  color: rgb(250, 250, 250);
   background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='rgba(250,250,250,0.6)' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   background-size: 13px 15px;
 }
@@ -2889,7 +2896,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #styles-switcher ul li.blue {
   background: #007bff;
@@ -2955,3 +2962,5 @@ input:-internal-autofill-selected {
   left: -40px;
   border-radius: 4px 0px 0px 4px;
 }
+
+/*# sourceMappingURL=stylesheet.css.map */

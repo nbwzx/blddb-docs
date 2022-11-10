@@ -110,6 +110,7 @@
               <li class="nav-item"><a class="nav-link" href="#idocs_3_corner_twist">三角翻库</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_image">联想词库</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_nightmare_alg_set">噩梦公式集</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_custom_alg_set">个人公式集</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_lettering_scheme">编码</a></li>
             </ul>
           </li>
@@ -159,7 +160,7 @@
                   <li><strong>GitHub (docs):</strong> <a href="https://github.com/nbwzx/blddb-docs"
                       target="_blank">github.com/nbwzx/blddb-docs</a></li>
                   <li><strong>创建:</strong> 2022年6月12日</li>
-                  <li><strong>更新:</strong> 2022年10月14日</li>
+                  <li><strong>更新:</strong> 2022年11月10日</li>
                 </ul>
               </div>
             </div>
@@ -369,12 +370,12 @@
           <section id="idocs_3_style_corner">
             <h3>角块公式库</h3>
             <p>
-              　　角块公式库，翻角公式库和奇偶公式库的所有公式都是由程序生成的符合噩梦体系的公式。每条公式都有一个从多方面进行评价的量化指标“等效步数”。它们主要以噩梦版公式集为样本，通过<a
+              　　角块公式库的所有公式都是由程序生成的符合噩梦体系的公式。每条公式都有一个从多方面进行评价的量化指标“等效步数”。它们主要以噩梦版公式集为样本，通过<a
                 href="https://wikii.one/Simulated_annealing"
                 target="blank">模拟退火算法</a>对权重值进行调整，使得整体上噩梦版公式集采用的公式在所有备选公式中的排序中尽量靠前。排序前18条的公式会被显示在网页上，其中灰色的是最新的噩梦版公式集采用的公式。
             </p>
             <p>
-              　　查询方式：一般而言，只要在公式查询右边的横线上输入要查询的公式编码即可，上面的位置类会自动生成。你也可以通过选择位置类的方式来查询。输入完毕后，网页会显示该状态排序前18条的公式以及对应的交换子形式和起手位置。
+              　　<strong>查询方式：</strong>一般而言，只要在公式查询右边的横线上输入要查询的公式编码即可，上面的位置类会自动生成。你也可以通过选择位置类的方式来查询。输入完毕后，网页会显示该状态排序前18条的公式以及对应的交换子形式和起手位置。
             </p>
             <p><a class="popup-img" href="../assets/images/zh/blddb.net_corner.html.png"><img
                   src="../assets/images/zh/blddb.net_corner.html.png" class="img-fluid img-thumbnail" alt="image"
@@ -394,7 +395,7 @@
           <section id="idocs_3_style_edge">
             <h3>棱块公式库</h3>
             <p>
-              　　棱块公式库和翻棱公式库大多都是一些传统公式和传统公式的衍生公式（例如镜像，U 和 U'
+              　　棱块公式库大多都是一些传统公式和传统公式的衍生公式（例如镜像，U 和 U'
               互换等）。这是因为在类似的体系和限制下，棱块每种状态的公式数比角块多很多，暂时无法做到像角块一样暴力搜索出全部解法。其中。排序暂时仅通过转动步数进行升序排列，排序前18条的公式会被显示在网页上，其中灰色的是最新的噩梦版公式集采用的公式。
             </p>
             <p><a class="popup-img" href="../assets/images/zh/blddb.net_edge.html.png"><img
@@ -543,6 +544,41 @@
             <p>
               　　<strong style="color:red">重要说明：</strong>
               2020年年初至今王逸帆大面积推广三盲新思路公式和骚操作技术（主要在浮动缓冲体系下展开），重点自然是前者，适合于大众，而后者主要作为三盲未来发展的一个方向，或者说用于突破通过大量练习也突破不了的瓶颈，而不是成为一些基础不扎实的选手认为的捷径！可以明确地告诉你们，三盲想要sub30甚至sub20，除了最基础的818公式，完全可以不需要其它任何骚操作技术，因为这类选手通常具有4个重要的点：观察、记忆、手速、连贯。其中拧动部分，最重要的是第4点，也是最多人不具备的一点，很多人也许并没有体会到过三盲连贯的感觉，就总妄想学一些骚操作来突破，最后只会适得其反，因为这本就是一种舍本逐末的行为。总的来说就是，三盲连sub25都没有，请放下你那想着浮动缓冲的念头…
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Custom Alg Set
+		============================ -->
+          <section id="idocs_custom_alg_set">
+            <h3>个人公式集</h3>
+            <p>
+              　　个人公式集包含2个子模块：
+            </p>
+            <ul>
+              <li>角块公式集</li>
+              <li>棱块公式集</li>
+            </ul>
+            <h5 style="text-align:left">角块公式集</h5>
+            <p>
+              　　在你选择了缓冲块以后，会自动生成一个对应缓冲的空工作表，其中内置了18条备选公式。你可以通过下拉栏或者智能补全的方式进行一些公式的选择，也可以添加下拉栏中没有的公式（但是只有公式正确时才会出现添加按钮）。只要你选择或者添加了一条公式，就会自动生成对应的交换子形式和起手位置。
+            </p>
+            <p>
+              　　<strong>导入本地 Excel：</strong>将本地 xlsx, xls 或 csv 格式的 Excel 文件导入到当前工作表中。
+            </p>
+            <p>
+              　　<strong>导出为 Excel：</strong>将当前工作表的数据导出为 xlsx 格式的 Excel 文件。
+            </p>
+            <p>
+              　　<strong>清空：</strong>清空当前工作表的数据。
+            </p>
+            <p><a class="popup-img" href="../assets/images/zh/blddb.net_custom_corner.html.png"><img
+                  src="../assets/images/zh/blddb.net_custom_corner.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+            <h5 style="text-align:left">棱块公式集</h5>
+            <p>
+              　　棱块公式集的使用方式和角块公式集类似。
             </p>
           </section>
 
@@ -698,6 +734,16 @@
                   <td><a href="https://fontawesome.com" target="_blank">Fontawesome</a></td>
                   <td><a href="https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt" target="_blank">Font
                       Awesome Free License</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://selectize.dev" target="_blank">Selectize.js</a></td>
+                  <td><a href="https://github.com/selectize/selectize.js/blob/master/LICENSE" target="_blank">Apache
+                      License 2.0</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://sheetjs.com" target="_blank">Sheetjs</a></td>
+                  <td><a href="https://github.com/SheetJS/sheetjs/blob/master/LICENSE" target="_blank">Apache License
+                      2.0</a></td>
                 </tr>
               </table>
             </p>

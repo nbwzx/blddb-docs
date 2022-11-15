@@ -109,6 +109,7 @@
               <li class="nav-item"><a class="nav-link" href="#idocs_3bld_parity">3BLD Parity</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_3_corner_twist">3 Corner Twist</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_nightmare_alg_set">Nightmare Alg set</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_custom_alg_set">Custom Alg Set</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_lettering_scheme">Lettering Scheme</a></li>
             </ul>
           </li>
@@ -158,7 +159,7 @@
                   <li><strong>GitHub (docs):</strong> <a href="https://github.com/nbwzx/blddb-docs"
                       target="_blank">github.com/nbwzx/blddb-docs</a></li>
                   <li><strong>Created:</strong> June 12<sup>th</sup>, 2022</li>
-                  <li><strong>Update:</strong> October 14<sup>th</sup>, 2022</li>
+                  <li><strong>Update:</strong> November 15<sup>th</sup>, 2022</li>
                 </ul>
               </div>
             </div>
@@ -527,13 +528,13 @@
               operations are R/U/D layer moves and left hand is always set in home grip position.
             </p>
             <p>
-              　　<strong style="color:red">Notice:</strong> Compared with the traditional corner algorithm set, F/B layer
+              　　<strong style="color:red">Notice: </strong> Compared with the traditional corner algorithm set, F/B layer
               moves are added to avoid D2 moves
               and non-alternate D and D' moves, which may lead to great potential of speeding up. All algorithms
               provided follow with a commutator form for blinders of all level to learn and understand.
             </p>
             <p>
-              　　<strong>Recommended floating buffer learning order:</strong> UFR-UBR-UFL-UBL-DFR-DFL
+              　　<strong>Recommended floating buffer learning order: </strong> UFR-UBR-UFL-UBL-DFR-DFL
             </p>
             <h5>Edge algorithm set</h5>
             <p>
@@ -546,12 +547,12 @@
               operations.
             </p>
             <p>
-              　　<strong style="color:red">Notice:</strong> Some algorithms provided are not traditional commutators. For
+              　　<strong style="color:red">Notice: </strong> Some algorithms provided are not traditional commutators. For
               blinders whose buffer is not in S
               slice (e.g. UF buffer), learning nightmare set is more difficult than traditional set.
             </p>
             <p>
-              　　<strong>Recommended floating buffer learning order:</strong> UR-UF-UL-UB-DR-DL-FR-FL-BR-DF
+              　　<strong>Recommended floating buffer learning order: </strong> UR-UF-UL-UB-DR-DL-FR-FL-BR-DF
             </p>
             <h5>Advanced algorithm set</h5>
             <p>
@@ -564,10 +565,50 @@
               set in home grip position.
             </p>
             <p>
-              　　<strong style="color:red">Important notice:</strong> Generally speaking, if you haven’t sub 25 on 3x3
+              　　<strong style="color:red">Important notice: </strong> Generally speaking, if you haven’t sub 25 on 3x3
               blind, please pay more attention to the
               basic blind stuff rather than these advanced techniques. Basic 818 algorithms (a single corner and edge
               buffer) are enough for blinders to sub 30, even sub 20.
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Custom Alg Set
+		============================ -->
+          <section id="idocs_custom_alg_set">
+            <h3>Custom Alg Set</h3>
+            <p>
+              　　Custom Alg Set includes two submodules:
+            </p>
+            <ul>
+              <li>3-Style Corner</li>
+              <li>3-Style Edge</li>
+            </ul>
+            <h5 style="text-align:left">3-Style Corner</h5>
+            <p>
+              　　A template spreadsheet will be generated after the user selects a corner buffer. 18 algorithms are
+              provided for each of the cases and the user can choose his/her favorite by clicking the drop-down list.
+              Alternatively, the user can enter algorithms manually (an add menu will appear only if the algorithm
+              entered is correct). Once the algorithm is added, commutator form and recommended grip will be produced
+              automatically.
+            </p>
+            <p>
+              　　<strong>Import Local Excel: </strong>Import a local document (format: .xlsx, .xls or .csv) into current
+              spreadsheet.
+            </p>
+            <p>
+              　　<strong>Export Excel: </strong>Export current spreadsheet into an xlsx document.
+            </p>
+            <p>
+              　　<strong>Clear: </strong>Clear all the algorithms selected.
+            </p>
+            <p><a class="popup-img" href="../assets/images/en/blddb.net_custom_corner.html.png"><img
+                  src="../assets/images/en/blddb.net_custom_corner.html.png" class="img-fluid img-thumbnail" alt="image"
+                  style="width:min(70%, 600px)"></a></p>
+            <h5 style="text-align:left">3-Style Edge</h5>
+            <p>
+              　　Similar to the 3-Style Corner counterpart.
             </p>
           </section>
 

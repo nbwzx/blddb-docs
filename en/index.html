@@ -109,9 +109,11 @@
               <li class="nav-item"><a class="nav-link" href="#idocs_edge_flip">Edge Flip</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_3bld_parity">3BLD Parity</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_2e2e">2e2e</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_ltef">LTEF</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_5_style">5-Style</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_nightmare_alg_set">Nightmare Alg set</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_custom_alg_set">Custom Alg Set</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_bigBLD_alg_set">BigBLD Alg Set</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_lettering_scheme">Lettering Scheme</a></li>
             </ul>
           </li>
@@ -161,7 +163,7 @@
                   <li><strong>GitHub (docs):</strong> <a href="https://github.com/nbwzx/blddb-docs"
                       target="_blank">github.com/nbwzx/blddb-docs</a></li>
                   <li><strong>Created:</strong> June 12<sup>th</sup>, 2022</li>
-                  <li><strong>Update:</strong> July 16<sup>th</sup>, 2023</li>
+                  <li><strong>Update:</strong> March 8<sup>th</sup>, 2024</li>
                 </ul>
               </div>
             </div>
@@ -281,7 +283,13 @@
           <section id="idocs_manmade_style">
             <h3>Manmade Style</h3>
             <p>
-              　　Manmade style collects lots of cubers' alg set automatically.
+              　　Manmade style collects lots of cubers' alg set automatically. The script runs at 00:00 on every Monday
+              automatically. If you would like to add your 3-style sheet to blddb-manmade, you can add the link to the
+              relevant json file (<a target="_blank"
+                href="https://github.com/nbwzx/blddb/blob/main/assets/json/sourceToUrl.json">3bld</a> or <a
+                target="_blank"
+                href="https://github.com/nbwzx/blddb/blob/main/assets/json/bigBLD/bigBLDSourceToUrl.json">bigBLD</a>)
+              and it will be synchronized the next time.
             </p>
           </section>
 
@@ -378,7 +386,7 @@
             <h2>Modules</h2>
             <p>
               　　<strong>BLDDB</strong> includes the
-              following eleven modules.
+              following thirteen modules.
             </p>
             <ul>
               <li>3-Style Corner</li>
@@ -387,9 +395,11 @@
               <li>Edge Flip</li>
               <li>3BLD Parity</li>
               <li>2e2e</li>
+              <li>LTEF</li>
               <li>5-Style</li>
               <li>Nightmare Alg Set</li>
               <li>Custom Alg Set</li>
+              <li>BigBLD Alg Set</li>
               <li>Lettering Scheme</li>
               <li>Readme</li>
             </ul>
@@ -419,7 +429,8 @@
                   src="../assets/images/en/blddb.net_corner.html.png" class="img-fluid img-thumbnail" alt="image"
                   style="width:min(70%, 600px)"></a></p>
             <p>
-              　　What's more, you can also switch the styles among nightmare style, balance style, yuanzi style and manmade style.
+              　　What's more, you can also switch the styles among nightmare style, balance style, yuanzi style and
+              manmade style.
             </p>
             <p><a class="popup-img" href="../assets/images/en/blddb.net_corner.html (1).png"><img
                   src="../assets/images/en/blddb.net_corner.html (1).png" class="img-fluid img-thumbnail" alt="image"
@@ -444,13 +455,6 @@
             </p>
             <p><a class="popup-img" href="../assets/images/en/blddb.net_edge.html.png"><img
                   src="../assets/images/en/blddb.net_edge.html.png" class="img-fluid img-thumbnail" alt="image"
-                  style="width:min(70%, 600px)"></a></p>
-            <p>
-              　　For each specific 3-edge-cycle, users can enter the starting move sequence to
-              filter the algorithm.
-            </p>
-            <p><a class="popup-img" href="../assets/images/en/blddb.net_edge.html (1).png"><img
-                  src="../assets/images/en/blddb.net_edge.html (1).png" class="img-fluid img-thumbnail" alt="image"
                   style="width:min(70%, 600px)"></a></p>
           </section>
 
@@ -508,6 +512,17 @@
             <p><a class="popup-img" href="../assets/images/en/blddb.net_2e2e.html.png"><img
                   src="../assets/images/en/blddb.net_2e2e.html.png" class="img-fluid img-thumbnail" alt="image"
                   style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- ltef
+		============================ -->
+          <section id="idocs_ltef">
+            <h3>LTEF</h3>
+            <p>
+              　　Here LTEF stand for last edge target + edge flip. eg. UF-xy-RU-FU, plus a flip. It contains 15840 cases.
+            </p>
           </section>
 
           <hr class="divider">
@@ -643,6 +658,27 @@
             <h5 style="text-align:left">3-Style Edge</h5>
             <p>
               　　Similar to the 3-Style Corner counterpart.
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- BigBLD Alg Set
+		============================ -->
+          <section id="idocs_bigBLD_alg_set">
+            <h3>BigBLD</h3>
+            <p>
+              　　BigBLD Alg Set includes five submodules:
+            </p>
+            <ul>
+              <li>Wing</li>
+              <li>X-center</li>
+              <li>+-center</li>
+              <li>Midge</li>
+              <li>Lettering Scheme</li>
+            </ul>
+            <p>
+              　　All the algorithms are for 5BLD. Only manmade mode is available now.
             </p>
           </section>
 
@@ -923,7 +959,7 @@
   ============================ -->
     <footer id="footer" class="section bg-light">
       <div class="container">
-        <p class="text-center">Copyright &copy; 2022-2023 <a href="https://zixingwang.cn" target="_blank">Zixing
+        <p class="text-center">Copyright &copy; 2022-2024 <a href="https://zixingwang.cn" target="_blank">Zixing
             Wang</a>. All Rights Reserved.</p>
         <p class="text-2 text-center mb-0">Powered by <a class="btn-link" target="_blank"
             href="https://harnishdesign.net/idocs-free-one-page-documentation-html-template.html">iDocs</a>.</p>

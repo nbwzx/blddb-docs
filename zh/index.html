@@ -110,9 +110,11 @@
               <li class="nav-item"><a class="nav-link" href="#idocs_3bld_parity">奇偶公式库</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_image">联想词库</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_2e2e">2e2e库</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_ltef">棱三循环带翻库</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_5_style">五循环库</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_nightmare_alg_set">噩梦公式集</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_custom_alg_set">个人公式集</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_bigBLD_alg_set">高盲公式库</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_lettering_scheme">编码</a></li>
             </ul>
           </li>
@@ -162,7 +164,7 @@
                   <li><strong>GitHub (docs):</strong> <a href="https://github.com/nbwzx/blddb-docs"
                       target="_blank">github.com/nbwzx/blddb-docs</a></li>
                   <li><strong>创建:</strong> 2022年6月12日</li>
-                  <li><strong>更新:</strong> 2023年9月13日</li>
+                  <li><strong>更新:</strong> 2024年3月8日</li>
                 </ul>
               </div>
             </div>
@@ -266,7 +268,10 @@
           <section id="idocs_manmade_style">
             <h3>人造风格</h3>
             <p>
-              　　人造风格是众多盲拧高手公式集的一个汇总。
+              　　人造风格是众多盲拧高手公式集的一个汇总。脚本会在每周一 0:00 自动定时运行。如果你想要将你的三循环公式加入人造风格中，请将你的公式集的 Google Sheet 链接添加进相关的 json 文件 （<a
+                target="_blank" href="https://github.com/nbwzx/blddb/blob/main/assets/json/sourceToUrl.json">三盲</a>或<a
+                target="_blank"
+                href="https://github.com/nbwzx/blddb/blob/main/assets/json/bigBLD/bigBLDSourceToUrl.json">高盲</a>），那么下次就会同步。
             </p>
           </section>
 
@@ -361,7 +366,7 @@
           <section id="idocs_modules">
             <h2>模块</h2>
             <p>
-              　　<strong>三盲公式库</strong> 包含以下12个模块。
+              　　<strong>三盲公式库</strong> 包含以下14个模块。
             </p>
             <ul>
               <li>角块公式库</li>
@@ -371,9 +376,11 @@
               <li>奇偶公式库</li>
               <li>联想词库</li>
               <li>2e2e库</li>
+              <li>棱三循环带翻库</li>
               <li>五循环库</li>
               <li>噩梦公式集</li>
               <li>个人公式集</li>
+              <li>高盲公式库</li>
               <li>编码</li>
               <li>说明</li>
             </ul>
@@ -421,12 +428,6 @@
             </p>
             <p><a class="popup-img" href="../assets/images/zh/blddb.net_edge.html.png"><img
                   src="../assets/images/zh/blddb.net_edge.html.png" class="img-fluid img-thumbnail" alt="image"
-                  style="width:min(70%, 600px)"></a></p>
-            <p>
-              　　对于每个棱块三循环，用户可以输入 set up 来探索公式的新做法。
-            </p>
-            <p><a class="popup-img" href="../assets/images/zh/blddb.net_edge.html (1).png"><img
-                  src="../assets/images/zh/blddb.net_edge.html (1).png" class="img-fluid img-thumbnail" alt="image"
                   style="width:min(70%, 600px)"></a></p>
           </section>
 
@@ -498,6 +499,17 @@
             <p><a class="popup-img" href="../assets/images/zh/blddb.net_2e2e.html.png"><img
                   src="../assets/images/zh/blddb.net_2e2e.html.png" class="img-fluid img-thumbnail" alt="image"
                   style="width:min(70%, 600px)"></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- ltef
+		============================ -->
+          <section id="idocs_ltef">
+            <h3>棱三循环带翻库</h3>
+            <p>
+              　　棱三循环带翻库包含了全部的 15840 条棱三循环带翻公式。
+            </p>
           </section>
 
           <hr class="divider">
@@ -614,6 +626,27 @@
             <h5 style="text-align:left">棱块公式集</h5>
             <p>
               　　棱块公式集的使用方式和角块公式集类似。
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- BigBLD Alg Set
+		============================ -->
+          <section id="idocs_bigBLD_alg_set">
+            <h3>高盲公式集</h3>
+            <p>
+              　　高盲公式集包含5个子模块：
+            </p>
+            <ul>
+              <li>翼棱公式库</li>
+              <li>角心公式库</li>
+              <li>边心公式库</li>
+              <li>中棱公式库</li>
+              <li>编码</li>
+            </ul>
+            <p>
+              　　其中的公式都是针对五盲的。目前仅有人造模式。
             </p>
           </section>
 
@@ -869,7 +902,7 @@
   ============================ -->
     <footer id="footer" class="section bg-light">
       <div class="container">
-        <p class="text-center">Copyright &copy; 2022-2023 <a href="https://zixingwang.cn" target="_blank">Zixing
+        <p class="text-center">Copyright &copy; 2022-2024 <a href="https://zixingwang.cn" target="_blank">Zixing
             Wang</a>. All Rights Reserved.</p>
         <p class="text-2 text-center mb-0">Powered by <a class="btn-link" target="_blank"
             href="https://harnishdesign.net/idocs-free-one-page-documentation-html-template.html">iDocs</a>.</p>
